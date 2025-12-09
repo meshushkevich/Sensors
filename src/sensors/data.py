@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from pydantic import BaseModel
 
 
@@ -6,4 +8,4 @@ class SensorData(BaseModel):
     mcu_dev_id: int
     sensor_name: str
     value: float
-    timestamp: float
+    timestamp: datetime
